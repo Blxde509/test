@@ -10,8 +10,8 @@ local Window = Rayfield:CreateWindow({
 	},
         Discord = {
         	Enabled = true,
-        	Invite = "sore", -- The Discord invite code, do not include discord.gg/
-        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        	Invite = "Z9T7PNramP", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = false -- Set this to false to make them join the discord every time they load it up
         },
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
@@ -19,8 +19,8 @@ local Window = Rayfield:CreateWindow({
 		Subtitle = "Key System",
 		Note = "Join the discord FOR KEY discord.gg/r3T78cYzSs",
 		FileName = "KEY SYSTEM",
-		SaveKey = true,
-		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		SaveKey = false,
+		GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 		Key = "Roger2009"
 	}
 })
@@ -110,7 +110,7 @@ local Section = Tab:CreateSection("MAIN SCRIPTS!")
 local Main = Tab:CreateButton({
 	Name = "Fly script!",
 	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/sDKjh2Ye"))()
 	end,
 })
 
@@ -437,6 +437,34 @@ local main = cool:CreateButton({
 	Name = "TRUST BOY OP SCRIPT!",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/XXAWmifh'))()
+	end,
+})
+
+local main = cool:CreateButton({
+	Name = "AIMLOCK OP",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/Ng2UCUiC"))()
+	end,
+})
+
+local main = cool:CreateButton({
+	Name = "SWAGMODE OP",
+	Callback = function()
+		local main = cool:CreateButton({
+			Name = "AIMLOCK OP",
+			Callback = function()
+				loadstring(game:HttpGet("https://pastebin.com/raw/Ng2UCUiC"))()
+			end,
+		})
+	end,
+})
+
+local main = cool:CreateToggle({
+	Name = "FULL GODMODE",
+	CurrentValue = false,
+	Flag = "Toggle1", 
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/zBAwPd4S"))()
 	end,
 })
 
